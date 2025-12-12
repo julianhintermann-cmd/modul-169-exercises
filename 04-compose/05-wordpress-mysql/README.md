@@ -1,10 +1,12 @@
 ## Aufgabe 05: WordPress with MySQL
 
-This example defines one of the basic setups for WordPress. More details on how this works can be found on the official [WordPress image page](https://hub.docker.com/_/wordpress).
+This example defines one of the basic setups for WordPress. More details on how
+this works can be found on the official
+[WordPress image page](https://hub.docker.com/_/wordpress).
 
 Project structure:
 
-```
+```bash
 .
 ├── compose.yaml
 └── README.md
@@ -12,7 +14,7 @@ Project structure:
 
 [_compose.yaml_](compose.yaml)
 
-```
+```yaml
 services:
   db:
     # We use a mariadb image which supports both amd64 & arm64 architecture
@@ -28,17 +30,19 @@ services:
     ...
 ```
 
-When deploying this setup, docker compose maps the WordPress container port 80 to
-port 80 of the host as specified in the compose file.
+When deploying this setup, docker compose maps the WordPress container port 80
+to port 80 of the host as specified in the compose file.
 
 > ℹ️ **_INFO_**  
-> For compatibility purpose between `AMD64` and `ARM64` architecture, we use a MariaDB as database instead of MySQL.  
-> You still can use the MySQL image by uncommenting the following line in the Compose file  
+> For compatibility purpose between `AMD64` and `ARM64` architecture, we use a
+> MariaDB as database instead of MySQL.  
+> You still can use the MySQL image by uncommenting the following line in the
+> Compose file  
 > `#image: mysql:8.0.27`
 
-## Deploy with docker compose
+### Deploy with docker compose
 
-```
+```bash
 $ docker compose up -d
 Creating network "wordpress-mysql_default" with the default driver
 Creating volume "wordpress-mysql_db_data" with default driver
@@ -47,11 +51,11 @@ Creating wordpress-mysql_db_1        ... done
 Creating wordpress-mysql_wordpress_1 ... done
 ```
 
-## Expected result
+### Expected result
 
 Check containers are running and the port mapping:
 
-```
+```bash
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                 NAMES
 5fbb4181a069        wordpress:latest    "docker-entrypoint.s…"   35 seconds ago      Up 34 seconds       0.0.0.0:80->80/tcp    wordpress-mysql_wordpress_1
@@ -64,12 +68,13 @@ Navigate to `http://localhost:80` in your web browser to access WordPress.
 
 Stop and remove the containers
 
-```
+```bash
 $ docker compose down
 ```
 
-To remove all WordPress data, delete the named volumes by passing the `-v` parameter:
+To remove all WordPress data, delete the named volumes by passing the `-v`
+parameter:
 
-```
+```bash
 $ docker compose down -v
 ```

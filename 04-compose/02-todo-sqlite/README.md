@@ -1,4 +1,4 @@
-# Aufgabe 02: ToDo-App mit SQLite und ReactJS
+## Aufgabe 02: ToDo-App mit SQLite und ReactJS
 
 Diese Web-Applikation verwaltet ToDo-Items. Die Daten werden in einer SQLite Datenbank gespeichert. Das Frontend wurde mit dem ReactJS-Framework realisiert.
 

@@ -1,6 +1,7 @@
-# Das einfachste Docker-Compose Beispiel
+## Das einfachste Docker-Compose Beispiel
 
-In diesem Beispiel wird eine einfache API und ein Frontend-Webserver mit Docker-Compose gestartet.
+In diesem Beispiel wird eine einfache API und ein Frontend-Webserver mit
+Docker-Compose gestartet.
 
 ### Aufgabe
 

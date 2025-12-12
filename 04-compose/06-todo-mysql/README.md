@@ -1,4 +1,4 @@
-# Aufgabe 06: FastApi Todos mit MySQL-Datenbank
+## Aufgabe 06: FastApi Todos mit MySQL-Datenbank
 
 ### Ziel: Die Applikation soll in Container verpackt werden und mit Compose gestartet werden.
 
