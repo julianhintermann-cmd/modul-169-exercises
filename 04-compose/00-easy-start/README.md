@@ -3,7 +3,8 @@
 In diesem Beispiel wird eine einfache API und ein Frontend-Webserver mit Docker-Compose gestartet.
 
 ### Aufgabe
-Erstelle für api und ui jeweils ein Dockerfile. 
+
+Erstelle für api und ui jeweils ein Dockerfile.
 
 Erstelle dann ein Docker-Compose File, welches die beiden Container startet.
 

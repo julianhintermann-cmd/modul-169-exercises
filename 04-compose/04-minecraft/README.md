@@ -1,7 +1,9 @@
-## Minecraft server
+## Aufgabe 04: Minecraft Server
+
 This example defines a basic setup for a Minecraft server. More details on the Minecraft server docker image can be found [here](https://github.com/itzg/docker-minecraft-server/blob/master/README.md).
 
 Project structure:
+
 ```
 .
 ├── compose.yaml
@@ -9,6 +11,7 @@ Project structure:
 ```
 
 [_compose.yaml_](compose.yaml)
+
 ```
 services:
  minecraft:
@@ -34,7 +37,7 @@ Creating network "minecraft_default" with the default driver
 Creating minecraft_minecraft_1 ... done
 ```
 
-Note: this is using a volume in order to store Minecraft server data, that can be recovered if you remove the container and restart it. 
+Note: this is using a volume in order to store Minecraft server data, that can be recovered if you remove the container and restart it.
 
 ## Expected result
 
@@ -63,11 +66,11 @@ minecraft_1  | [15:06:39] [RCON Listener #1/INFO]: RCON running on 0.0.0.0:25575
 Once it is initialized, run your Minecraft application, hit "Play", then "Multiplayer" and "Add server"
 ![add server](screenshots/click-add-server.png)
 
- Specify your new server IP : localhost:25565
- ![server configuration](screenshots/add-server-config.png)
+Specify your new server IP : localhost:25565
+![server configuration](screenshots/add-server-config.png)
 
- You can then start playing
- ![ready to play](screenshots/ready-to-play.png)
+You can then start playing
+![ready to play](screenshots/ready-to-play.png)
 
 Stop and remove the containers
 
@@ -80,3 +83,4 @@ To delete all data, remove all named volumes by passing the -v arguments:
 ```
 $ docker compose down -v
 ```
+

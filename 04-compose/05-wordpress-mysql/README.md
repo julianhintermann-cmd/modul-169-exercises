@@ -1,8 +1,9 @@
-## WordPress with MySQL
+## Aufgabe 05: WordPress with MySQL
+
 This example defines one of the basic setups for WordPress. More details on how this works can be found on the official [WordPress image page](https://hub.docker.com/_/wordpress).
 
-
 Project structure:
+
 ```
 .
 ├── compose.yaml
@@ -10,6 +11,7 @@ Project structure:
 ```
 
 [_compose.yaml_](compose.yaml)
+
 ```
 services:
   db:
@@ -31,7 +33,7 @@ port 80 of the host as specified in the compose file.
 
 > ℹ️ **_INFO_**  
 > For compatibility purpose between `AMD64` and `ARM64` architecture, we use a MariaDB as database instead of MySQL.  
-> You still can use the MySQL image by uncommenting the following line in the Compose file   
+> You still can use the MySQL image by uncommenting the following line in the Compose file  
 > `#image: mysql:8.0.27`
 
 ## Deploy with docker compose
@@ -45,10 +47,10 @@ Creating wordpress-mysql_db_1        ... done
 Creating wordpress-mysql_wordpress_1 ... done
 ```
 
-
 ## Expected result
 
 Check containers are running and the port mapping:
+
 ```
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                 NAMES
@@ -67,6 +69,7 @@ $ docker compose down
 ```
 
 To remove all WordPress data, delete the named volumes by passing the `-v` parameter:
+
 ```
 $ docker compose down -v
 ```
