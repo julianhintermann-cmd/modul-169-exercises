@@ -1,4 +1,4 @@
-## uebung02: Lokalen Ordner in einen Docker-Container mounten
+## Lokalen Ordner in einen Docker-Container mounten
 
 ### Ziel
 

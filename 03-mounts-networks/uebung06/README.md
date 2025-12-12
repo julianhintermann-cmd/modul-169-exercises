@@ -1,4 +1,4 @@
-## uebung06: Docker Networking und DNS
+## Docker Networking und DNS
 
 ### Ziel
 

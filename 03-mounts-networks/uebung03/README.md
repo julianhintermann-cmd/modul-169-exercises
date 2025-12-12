@@ -1,5 +1,4 @@
-
-## uebung03: Lokalen Ordner zwischen zwei Docker-Containern teilen
+## Lokalen Ordner zwischen zwei Docker-Containern teilen
 
 ### Ziel
 
@@ -64,4 +63,3 @@ cat /shared/file_from_container1.txt
 ```bash
 cat /shared/file_from_container2.txt
 ```
-

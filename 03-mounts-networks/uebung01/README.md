@@ -1,4 +1,4 @@
-## Tutorial 1: HTML-Datei in einen Nginx-Container mounten
+## HTML-Datei in einen Nginx-Container mounten
 
 ### Ziel
 

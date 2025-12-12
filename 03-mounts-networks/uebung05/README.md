@@ -1,4 +1,4 @@
-## uebung05: Datenbankeinträge in einem Docker-Volume speichern
+## Datenbankeinträge in einem Docker-Volume speichern
 
 ### Ziel
 

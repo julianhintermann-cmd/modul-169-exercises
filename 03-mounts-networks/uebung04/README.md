@@ -1,4 +1,4 @@
-## uebung04: Automatisches Aktualisieren einer Webseite
+## Automatisches Aktualisieren einer Webseite
 
 <!-- mit Node.js und npm in einem Docker-Container (mit nodemon und live-server) -->
 
