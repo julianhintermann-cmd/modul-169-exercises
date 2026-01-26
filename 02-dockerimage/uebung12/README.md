@@ -58,7 +58,8 @@ COPY server.js .
 RUN npm install
 # Expose the port the app runs on
 EXPOSE 3000
-CMD ["npm", "start"] # Command to run the application
+# Command to run the application
+CMD ["npm", "start"] 
 ```
 
 - Bilden Sie das Image mit dem Tag `-t uebung12`
